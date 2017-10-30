@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">      
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<script type="text/javascript" src="bower_components/jquery/dist/jquery-1.11.3.js"></script>
+
+</head>
+<body ng-class="{'blackkg':bground}">
+  <div  class="comment">
+    <div class="com" ng-class="{'slideright':slide}">
+      <section class="left" ng-controller="comm">
+        <div id="leader">
+          <ul class="nav nav-table mulu">
+            <li  class="text-center">
+              <a href="javascript:void(0);" ng-click="dengp()">
+                <img src="images/avatar.png" alt="">
+                <span id="login" ng-cloak>{{dengS}}</span>
+            </a>
+        </li>
+        <li>
+          <a href="#today" ng-click="leader1()" target="_self"><span class="iconfont icon-shouye"></span>今日一刻</a>
+      </li>
+      <li>
+          <a href="#older" ng-click="leader1()" target="_self"><span class="iconfont icon-document_fill"></span>往期内容</a>
+      </li>
+      <li>
+          <a href="#collection" ng-click="leader1()" target="_self"><span class="iconfont icon-collection_fill"></span>我的收藏 <span class="badge" ng-cloak>{{colnumn}}</span></a>
+      </li>
+  </ul> 
+  <!-- <div class="nav-tabs nav-tab list-inline wheather" ng-class="{'opacity':wther}">
+    <div class="col-xs-4">23:21:36</div>
+    <div class="col-xs-4">10003</div>
+    <div class="col-xs-4">3 </div>
+  </div> -->
+  <ul class="nav nav-tabs nav-tabs-justified list-inline leftbottom">
+    <li class="text-left"><a href="javascript:void(0);" title="" ng-click="charblack()" >{{night}}</a></li>
+    <li class="text-left"><a href="javascript:void(0);" title="" ng-click="online()">离线</a></li>
+</ul>
+</div>
+</section>
+<section class="right container">
+  <div class="touB">
+      <div class="open pull-left col-xs-2">
+          <a href="javascript:void(0);" title="" class="openleader " ng-click="leader()">
+            <span class="iconfont icon-createtask_fill"></span>
+        </a>
+    </div>
+    <div class="headerM col-xs-8 " >
+       <div class="sos" ng-show="wenzi" ng-click="sosodate()">
+        <input  type="search" name="soso" value="" class="form-control fade" placeholder="请输入搜索关键字" >
+      </div>
+      
+      <div class="text-center sonsize" ng-cloak ng-class="{'opacity':wenzi}" >{{title}}</div> 
+  </div>
+  <div class="search pull-right col-xs-2  text-right">
+      <a href="javascript:void(0);" ng-click="showsoso()">
+        <span class="iconfont icon-search "></span>
+      </a>   
+  </div>
+</div>
+
+<div class="loading" ng-show="loaded" >
+    <img src="./images/loading.gif" alt="">
+</div>
+
+<div ng-click="leader1()" ng-view class="main">  </div>
+
+
+</section>
+</div> 
+</div>
+
+<script src="bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="bower_components/angular-route/angular-route.js" type="text/javascript" charset="utf-8" ></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+</body>
+</html>

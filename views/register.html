@@ -1,0 +1,43 @@
+<div class="modal " ng-class="{'show':Zce}" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="remov()"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">欢迎你</h4>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="control-label col-xs-3 text-right " for="uname" >用户名：</label>
+            <div class="col-xs-9">
+                <input autofocus type="text" name="username" id="uname" class="form-control" ng-model="usernameD" >
+            </div>
+            
+          </div>
+          <div class="container">
+              <div class="col-xs-9 col-xs-offset-3  zhushi ">
+                 <span class="help-block">用户名长度6-18个字节</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+             <label class="control-label col-xs-3 text-right" for="upassword">密码：</label>
+             <div class="col-xs-9">
+                <input type="text" name="password" id="upassword" class="form-control" ng-model="passwordD">
+            </div>
+            
+          </div>
+          <div class="container">
+              <div class="col-xs-9 col-xs-offset-3 zhushi">
+               <span class="help-block">密码长度6-10个字节</span>
+            </div>
+          </div>
+       </form>
+    </div>
+    <div class="modal-footer">
+       <button type="button" class="btn btn-primary" ng-click="Zdate()">注册</button>
+    </div>
+   </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+

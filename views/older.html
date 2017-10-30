@@ -1,0 +1,30 @@
+<div class="item fad">
+  <div class="timeT container" >
+    <a href="javascript:void(0);" class="col-xs-3 pre" ng-class="{'opacity':prehid}" ng-click="preaday()" >{{daypre}}</a> 
+    <span class="col-xs-6 text-center clock" ng-cloak>{{date|date:'ddMMM'}}</span>
+    <a href="javascript:void(0);" class="col-xs-3 text-right next" ng-click="nextaday()">{{daynext}}</a>
+ </div>
+ <div class="neirong ">
+  <div class="contentT" ng-repeat="post in posts">
+  <span class="iconfont icon-like " ng-click="cred($index)"></span>
+   <div class="labelT" ng-if="post.column.name">{{post.column.name}}
+   </div>
+   <div class="otherT" >
+       <h3>{{post.title}}</h3>
+       <div class="brief">
+           <!-- 10001 --><!-- 10002 -->
+           <p ng-class="{only: post.display_style == 10001}" ng-if="post.display_style != 10003">{{post.abstract}}</p>
+           <!-- 10002 -->
+           <div class="thumb" ng-if="post.display_style == 10002">
+            <img ng-src="{{post.thumbs[0].small.url}}" alt="">
+        </div>
+        <!-- 10003 -->
+        <div class="gallery" ng-if="post.display_style == 10003">
+            <img ng-src="{{post.thumbs[0].small.url}}" alt="">
+        </div>
+    </div>
+</div> 
+</div>
+</div>
+</div>
+

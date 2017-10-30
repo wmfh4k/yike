@@ -1,0 +1,320 @@
+@rem:16rem;
+@media only screen and (width:320px) {
+html{
+  font-size: 16px;
+}
+    
+}
+@media only screen and (width:360px) {
+    html{
+  font-size: 18px;
+}
+    
+}
+@media only screen and (width:375px) {
+    html{
+  font-size: 18.75px;
+}
+    
+}
+@media only screen and (width:412px) {
+    html{
+  font-size: 20.6px;
+}
+    
+}
+@media only screen and (width:414px) {
+    html{
+  font-size: 20,7px;
+}
+}
+html{
+  font-size: 16px;
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+body.blackkg{
+    background:rgba(0,0,0,.8) ;
+    color: white;
+}
+input{
+  -webkit-tap-hight-color:rgba(0,0,0,0);
+  outline: none;
+  -webkit-text-size-ajust:none;
+  -webkit-touch-callout:none;
+}
+a,a:hover,a:active,a:link{
+    // -webkit-touch-callout:none;
+    text-decoration: none;
+  }
+  .comment{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:100%;
+    overflow-x: hidden;  
+    overflow-y: hidden;  
+  }
+  .com{
+    width:180%;
+    height: 100%;
+    position: relative;
+    display:flex;
+    justify-content:flex-start;
+    transform:translateX(-44.5%);
+    -webkit-transform:translateX(-44.5%);
+    -moz-transform:translateX(-44.5%);
+// -100%*8/18
+}
+.com.slideright{
+ transform:translateX(0%);
+ -webkit-transform:translateX(0%);
+ -moz-transform:translateX(0%);
+
+}
+.left{
+  height: 100%;
+  flex:8;
+  display:block;
+  background:#E7EAEE;
+  position:relative;
+
+}
+
+#leader ul li{
+  padding:10px 15px;
+}
+#leader ul li a{
+  display:block;
+  width:100%;
+}
+
+.badge{
+  background:#5DE7F1 !important;
+}
+.left .leftbottom{
+  position:absolute;
+  bottom: 0px;
+}
+#login::before{
+  content: "";
+  display:table;
+  clear: both;
+}
+.left .weather{
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#leader .weather div{
+  margin: 0px;
+  padding: 0px;
+}
+//right 93,231,241
+.right{
+  flex:10; 
+  height: 100%;
+}
+.right .touB{
+  padding-top: 20px; 
+  height: 2.5rem;
+// @HT:48px;
+  background:#5DE7F1;
+  -moz-box-shadow:0px 3px 1px #48B3BA; 
+  -webkit-box-shadow:0px 3px 1px #48B3BA;
+  box-shadow:0px 3px 1px #48B3BA;
+  clear:both;
+  line-height: 7%;
+
+}
+.right .touB .open{
+}
+.right.container{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+// .right .headerM input[type=search]{
+//     // width: 80%;
+//     margin-top:8px;
+//     opacity: 0;
+
+// }
+.opacity{
+   filter:alpha(opacity=0);   /* IE */
+  -moz-opacity:0;       /* 老版Mozilla */
+ -khtml-opacity:0;    /* 老版Safari */
+   opacity:0; /* 支持opacity的浏览器*/
+ }
+.right .headerM div{
+  color:white;
+  font-size: 1.8rem;
+}
+.right .headerM input::-webkit-input-placeholder{
+  color:#E8E8E8;  
+}
+.right .headerM input{
+transition:2s;
+background: rgba(46, 188, 158, 0.6);
+color:white;
+}
+.right .headerM .sos{
+position: absolute;
+top: -1rem;
+left: 0rem;
+width: 100%;
+
+}
+
+.loading {
+  width: 2rem;
+  margin: 1rem auto 0;
+}
+
+// @HT:48px;
+// @TT:40px;
+//控制器的统一样式
+@HT:88px;
+.main{
+    width:100%;
+    height:93%
+}
+.item{
+    margin: 0;
+    width: 100%;
+    height:100%;
+}
+.timeT{
+  // @TT:40px;
+  // height: 6%;
+  line-height: 2rem;
+  height: 2rem;
+  width: 100%;
+  padding-left: 20px;
+  color:#5DE7F1;
+}
+.timeT .pre,.timeT .next{
+    display:block;
+    font-size: 1rem;
+    line-height: 2rem;
+    color:#5DE7F1;
+    padding: 0;
+    margin: 0;
+    height: 2rem;
+}
+.timeT .clock{
+    font-size: 1.3rem;
+}
+.neirong{
+    overflow:auto;
+    height:94%;
+}
+.contentT{
+    padding:0px 20px;
+    width: 100%;
+    border-top: 2px #DFDFDF solid;
+    position:relative;
+}
+.labelT{
+    width: 60px;
+    height: 30px;
+    color:white;
+    background:#DFDFDF;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+
+}
+.otherT{
+    margin-top: 10px;
+    width: 100%;
+
+}
+.brief img{
+    width: 200px;
+
+}
+
+.zhushi.col-xs-9{
+    padding:0px;
+}
+
+//图标
+.icon-createtask_fill:before ,.icon-search:before{
+  content:"";
+  font-size: 1.75rem;
+  color: white;
+  background:#5DE7F1;
+}
+.icon-collection_fill:before,.icon-document_fill:before,.icon-shouye:before{
+  content: "";
+  font-size: 16/@rem;
+  color: white;
+  background:#5DE7F1;
+  margin-right: 15px;
+}
+.icon-like:before {
+content: "\e708";
+position: absolute;
+right: 20px;
+display: block;
+font-size: 1.5rem;
+color: red;
+}
+.icon-like_fill:before {
+content: "\e707";
+position: absolute;
+right: 20px;
+display: block;
+font-size: 1.5rem;
+color: red;
+}
+// LOGIN
+.modal {
+color: black !important;
+position: fixed;
+top: 15%;
+left: 48%;
+right: 2%;
+z-index: 1050;
+display: none;
+overflow: hidden;
+-webkit-overflow-scrolling: touch;
+outline: 0;
+}
+.col-xs-3{
+    padding-right: 0px;
+}
+.modal-header{
+    background:#5DE7F1;
+}
+.modal-body .form-group label {
+   white-space:nowrap ;
+   text-align: center;
+}
+.fad{
+    -webkit-transition: 500ms linear all ;
+  transition:500ms linear all;
+}
+.fad.ng-enter{
+     left: 100%;
+     opacity: 0;
+
+
+}
+.fad.ng-enter.ng-enter-active{
+    left: 0;
+    opacity: 1;
+
+}
+.fad.ng-leave{
+    left: 0;
+    opacity: 1;
+}
+.fad.ng-leave.ng-leave-active{
+    left: -100%;
+    opacity: 0;
+
+}

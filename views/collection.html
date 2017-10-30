@@ -1,0 +1,25 @@
+<div class="item" ng-controller="ctrlcollection" >
+ <div class="neirong">
+  <div class="contentT" ng-repeat="coll in colldata">
+  <span class="iconfont icon-like_fill " ng-click="crmove($index)"></span>
+   <div class="labelT" ng-if="coll.column.name">{{coll.column.name}}
+   </div>
+   <div class="otherT" >
+       <h3>{{coll.title}}</h3>
+       <div class="brief">
+           <!-- 10001 --><!-- 10002 -->
+           <p ng-class="{only: coll.display_style == 10001}" ng-if="coll.display_style != 10003">{{coll.abstract}}</p>
+           <!-- 10002 -->
+           <div class="thumb" ng-if="coll.display_style == 10002">
+            <img ng-src="{{coll.thumbs[0].small.url}}" alt="">
+        </div>
+        <!-- 10003 -->
+        <div class="gallery" ng-if="coll.display_style == 10003">
+            <img ng-src="{{coll.thumbs[0].small.url}}" alt="">
+        </div>
+    </div>
+</div> 
+</div>
+</div>
+</div>
+
